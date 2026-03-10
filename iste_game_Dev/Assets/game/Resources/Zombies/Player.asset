@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb04c2a9ff6330b48b4c6457625745b6, type: 3}
-  m_Name: bball
+  m_Name: Player
   m_EditorClassIdentifier: Assembly-CSharp::Zombie
   name: 
   description: 

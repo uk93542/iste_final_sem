@@ -11,6 +11,14 @@ public class Zombie
         level = pLevel;
     }
 
+    public ZombieBase Base {
+        get { return _base; }
+    }
+
+    public int Level {
+        get { return level; }
+    }
+
     public int Attack {
         get { return Mathf.FloorToInt((_base.Attack * level) / 100f + 5); }
     }
