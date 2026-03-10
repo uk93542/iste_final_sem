@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     private bool isMoving;
     private Vector2 input;
     private Animator animator; 
+    public LayerMask grassLayer;
 
     private void Awake() 
     {
@@ -53,6 +54,8 @@ public class Player : MonoBehaviour
         
         transform.position = targetPos;
         isMoving = false;
+
+        CheckForEncounters();
     }
 
     private bool IsWalkable(Vector3 targetPos)
@@ -63,5 +66,16 @@ public class Player : MonoBehaviour
         return false;
     }
     return true;
+    }
+
+    private void CheckForEncounters()
+    {
+        if (Physics2D.OverlapCircle(transform.position, 0.2f, grassLayer) != null)
+        {
+            if (Random.Range(0,101)<=10)
+            {
+                Debug.Log("Encountered a wild Zombie");
+            }
+        }  
     }
 }
