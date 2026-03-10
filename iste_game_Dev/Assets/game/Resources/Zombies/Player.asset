@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Zombie
   name: 
   description: 
-  frontSprite: {fileID: 0}
-  backSprite: {fileID: 0}
+  frontSprite: {fileID: 7152930139536384079, guid: cd3b22d4dda958f4eac6dfc3402efbdf, type: 3}
+  backSprite: {fileID: -6092953325292582070, guid: cd3b22d4dda958f4eac6dfc3402efbdf, type: 3}
   type1: 0
   type2: 0
   maxHp: 100
   maxMp: 0
-  attack: 50
-  defense: 15
+  attack: 80
+  defense: 25
   spAttack: 0
   spDefense: 0
-  speed: 35
+  speed: 50
   learnableMoves:
   - moveBase: {fileID: 11400000, guid: b6b75c5c08ed9fe4f9db1d3c7d9cce69, type: 2}
     level: 1
